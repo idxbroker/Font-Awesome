@@ -1,0 +1,27 @@
+.container {
+    .idx-icon-small {
+        display: inline-block;
+        font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+        font-size: inherit; // can't have font-size inherit on line above, so need to override
+        color: #222222;
+        text-rendering: auto; // optimizelegibility throws things off #1094
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: (4em / 3);
+        line-height: (3em / 4);
+        vertical-align: -15%;  
+        text-decoration: none;
+        &.idx-icon-gear-warning {
+            color: #FEEA3A;
+        }
+        &.idx-icon-gear-bad {
+            color: #D0021B;
+        }
+        &.idx-icon-gear-good {
+            color: #4BAE4F;
+        }
+        &.idx-icon-gear-unknown {
+            color: #9D9D9D;
+        }        
+    }
+}
